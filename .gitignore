@@ -1,0 +1,39 @@
+# Gitignore Monorepo: Next.js + Spring Boot + MariaDB
+
+# Node.js / Frontend
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+frontend/build/
+frontend/.env.local
+frontend/.env.development.local
+frontend/.env.test.local
+frontend/.env.production.local
+frontend/npm-debug.log*
+frontend/yarn-debug.log*
+frontend/yarn-error.log*
+frontend/.pnpm-debug.log*
+
+# Java / Maven / Backend
+backend/target/
+backend/*.jar
+backend/*.war
+backend/.mvn/timing.properties
+backend/.flattened-pom.xml
+
+# IDE & Editores
+.idea/
+*.iml
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.DS_Store
+Thumbs.db
+
+# Docker & Datos Locales
+*.local
+mariadb_data/
+docker-compose.override.yml
